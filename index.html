@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dictonary Using API</title>
+   
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-center text-4xl text-purple-700 bold  mt-5">Welcome to My Dictonary , that gives you english meaning , synonyme and antonyme</h1>
+    </header>
+
+    <!-- Search feild -->
+    <section class="text-center my-5 bg-slate-400 p-8">
+        <input id="search-feild" type="text" placeholder="Type here" class="input input-bordered input-warning w-full max-w-xs" />
+        <button id="search-btn" onclick="load()" class="btn btn-success">Success</button>
+    </section>
+    
+
+   <!-- Output feild -->
+    <section class="flex justify-center">
+
+        <div id="output-container" class="w-1/2 h-96  bg-slate-300 flex place-content-center">   
+
+            <!-- <div class="card w-96 bg-primary text-primary-content my-4">
+                <div class="card-body">
+                  <h2 class="card-title">Card title!</h2>
+                  <h2 class="card-title">Card title!</h2>
+                  <h2 class="card-title">Card title!</h2>
+                  <h2 class="card-title">Card title!</h2>
+                </div>
+            </div> -->
+
+        </div>
+
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
